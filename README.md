@@ -3,10 +3,17 @@
 > Turn your local PC project into a **public, live, secure HTTPS website** in seconds.
 > Powered by **Cloudflare Tunnels** & **Ngrok Free Tier** — supports **Custom Branded Domains**, **Zero-Configuration Instant Links**, and **Mobile QR Verification**.
 
+
+> [!IMPORTANT]
+> **Developer Dependency (`devDependencies`)**: This tool is designed exclusively for **local development and testing**. It enables developers to expose their local PC ports to the internet for client demos, mobile device testing, and webhook debugging. It is **not** meant for production servers and should always be installed with `--save-dev` (or `-D`).
+
+
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D16.0.0-brightgreen.svg)](https://nodejs.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Cloudflare](https://img.shields.io/badge/Tunnel-Cloudflare%20Edge-orange.svg)](https://cloudflare.com)
 [![Ngrok](https://img.shields.io/badge/Tunnel-Ngrok%20Free-blue.svg)](https://ngrok.com)
+[![Developer Dependency](https://img.shields.io/badge/type-devDependencies-blueviolet.svg)](#-developer-dependency-usage)
+
 
 ---
 
@@ -82,7 +89,9 @@ To make the CLI commands (`cf-live`, `cloudflare-live-link`, `local-deploy`) ava
    ```
 
 ### Method 4: Publish to NPM
-If you want to install it from npm anywhere (`npm install --save-dev cloudflare-live-link`):
+If you want to install it from npm anywhere (`npm install --save-dev github:Ahasun-h/cloudflare-live-link
+# Or shorthand:
+npm i -D github:Ahasun-h/cloudflare-live-link`):
 ```bash
 npm login
 npm publish
