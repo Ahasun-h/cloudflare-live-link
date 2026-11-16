@@ -1,0 +1,53 @@
+{
+  "name": "cloudflare-live-link",
+  "version": "1.0.0",
+  "description": "Deploy local projects on your PC with Cloudflare Tunnels, custom domains, and instant shareable live links.",
+  "main": "src/index.js",
+  "bin": {
+    "cloudflare-live-link": "./bin/cli.js",
+    "cf-live": "./bin/cli.js",
+    "local-deploy": "./bin/cli.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    ".cflocalrc.example.json",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "node ./bin/cli.js",
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "cloudflare",
+    "cloudflared",
+    "tunnel",
+    "localhost",
+    "deploy",
+    "public-url",
+    "custom-domain",
+    "shareable-link",
+    "live-link",
+    "ngrok-alternative"
+  ],
+  "author": "Ahasun-h <habibahasun019@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ahasun-h/cloudflare-live-link.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ahasun-h/cloudflare-live-link/issues"
+  },
+  "homepage": "https://github.com/Ahasun-h/cloudflare-live-link#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.5",
+    "prompts": "^2.4.2",
+    "qrcode-terminal": "^0.12.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
