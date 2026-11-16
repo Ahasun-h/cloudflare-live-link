@@ -15,7 +15,7 @@
     "README.md"
   ],
   "scripts": {
-    "start": "node ./bin/cli.js",
+    "start": "node init && node ./bin/cli.js",
     "test": "node --test test/*.test.js"
   },
   "keywords": [
@@ -28,7 +28,11 @@
     "custom-domain",
     "shareable-link",
     "live-link",
-    "ngrok-alternative"
+    "ngrok-alternative",
+    "dev-dependency",
+    "developer-tools",
+    "local-development",
+    "dev-server"
   ],
   "author": "Ahasun-h <habibahasun019@gmail.com>",
   "license": "MIT",
